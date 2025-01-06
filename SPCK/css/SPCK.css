@@ -148,3 +148,26 @@ html {
     color: white; /* Giữ màu chữ trắng khi hover */
     text-decoration: none; /* Không hiện gạch chân khi hover */
 }
+.modal-content {
+    border-radius: 15px;
+}
+
+.modal-header {
+    background-color: #f8f9fa;
+    border-radius: 15px 15px 0 0;
+}
+
+.btn-primary {
+    background-color: #ff99cc;
+    border-color: #ff99cc;
+}
+
+.btn-primary:hover {
+    background-color: #ff66b3;
+    border-color: #ff66b3;
+}
+
+.form-check-input:checked {
+    background-color: #ff99cc;
+    border-color: #ff99cc;
+}

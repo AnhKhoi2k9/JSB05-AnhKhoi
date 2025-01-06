@@ -25,10 +25,11 @@
             <a href="#gifts"><i class="fas fa-gift"></i> Quà tặng</a>
             <a href="#footer"><i class="fas fa-envelope"></i> Liên hệ</a>
         </div>
+
         <div class="nav-right">
-            <a href="#signin"><i class="fas fa-sign-in-alt"></i> Đăng nhập</a>
-            <a href="#signup"><i class="fas fa-user-plus"></i> Đăng ký</a>
-        </div>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal"><i class="fas fa-sign-in-alt"></i> Đăng nhập</a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal"><i class="fas fa-user-plus"></i> Đăng ký</a>
+            </div>
     </nav>
     
 
@@ -80,14 +81,14 @@
                     <h3>Hoa Hồng Đỏ</h3>
                     <p>Hoa hồng đỏ tươi thắm</p>
                     <p class="price">150.000đ</p>
-                    <a href="chitiet.html" class="buy-button">Mua ngay</a>
+                    <a href="./html/chitiet.html" class="buy-button">Mua ngay</a>
                 </div>
                 <div class="product-card">
                     <img src="https://imgcdn.tapchicongthuong.vn/thumb/w_1000/tcct-media/21/3/7/hoa_ly_trang_3.jpg" alt="Hoa ly">
                     <h3>Hoa Ly Trắng</h3>
                     <p>Hoa ly trắng tinh khôi</p>
                     <p class="price">200.000đ</p>
-                    <a href="chitiet.html" class="buy-button">Mua ngay</a>
+                    <a href="./html/chitiet1.html" class="buy-button">Mua ngay</a>
                 </div>
             </div>
         </section>
@@ -100,14 +101,14 @@
                     <h3>Bó Hoa Cúc</h3>
                     <p>Hoa cúc vàng rực rỡ</p>
                     <p class="price">250.000đ</p>
-                    <a href="chitiet.html" class="buy-button">Mua ngay</a>
+                    <a href="./html/chitiet2.html" class="buy-button">Mua ngay</a>
                 </div>
                 <div class="product-card">
                     <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364" alt="Bó hoa tulip">
                     <h3>Bó Hoa Tulip</h3>
                     <p>Tulip Hà Lan nhập khẩu</p>
                     <p class="price">600.000đ</p>
-                    <a href="chitiet.html" class="buy-button">Mua ngay</a>
+                    <a href="./html/chitiet3.html" class="buy-button">Mua ngay</a>
                 </div>
             </div>
         </section>
@@ -121,5 +122,70 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     
+   
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Đăng nhập</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="loginEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Mật khẩu</label>
+                            <input type="password" class="form-control" id="loginPassword" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Ghi nhớ đăng nhập</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Đăng nhập</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">Đăng ký</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="registerName" class="form-label">Họ và tên</label>
+                            <input type="text" class="form-control" id="registerName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="registerEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPassword" class="form-label">Mật khẩu</label>
+                            <input type="password" class="form-control" id="registerPassword" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirmPassword" class="form-label">Xác nhận mật khẩu</label>
+                            <input type="password" class="form-control" id="confirmPassword" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="agreeTerms" required>
+                            <label class="form-check-label" for="agreeTerms">Tôi đồng ý với các điều khoản sử dụng</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Đăng ký</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
