@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/chitiet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <h1>Cửa hàng Hoa Tươi</h1>
+        <p>Mang vẻ đẹp thiên nhiên đến ngôi nhà của bạn</p>
+    </header>
+
+    <nav>
+        <div class="nav-left">
+            <a href="../SPCK.html"><i class="fas fa-home"></i> Trang chủ</a>
+            <a href="../SPCK.html#fresh-flowers"><i class="bi bi-flower3"></i> Hoa tươi</a>
+            <a href="../SPCK.html#bouquets"><i class="bi bi-flower1"></i> Bó hoa</a>
+            <a href="../SPCK.html#gifts"><i class="fas fa-gift"></i> Quà tặng</a>
+            <a href="../SPCK.html#footer"><i class="fas fa-envelope"></i> Liên hệ</a>
+        </div>
+
+        <div class="nav-right">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal"><i class="fas fa-sign-in-alt"></i> Đăng nhập</a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal"><i class="fas fa-user-plus"></i> Đăng ký</a>
+            </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac" alt="Hoa hồng đỏ" class="img-fluid">
+                    
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="product-details">
+                    <h2>Hoa Hồng Đỏ Tươi Thắm</h2>
+                    <div class="price-section">
+                        <span class="current-price">150.000đ</span>
+                        <span class="original-price"><del>180.000đ</del></span>
+                        <span class="discount-badge">-17%</span>
+                    </div>
+                    
+                    <div class="description mt-4">
+                        <h4>Mô tả sản phẩm</h4>
+                        <p>Bó hoa hồng đỏ tươi thắm được chọn lọc kỹ càng từ những cánh đồng hoa tốt nhất. Mỗi bông hoa đều được chăm sóc và thu hoạch vào thời điểm hoàn hảo nhất để đảm bảo độ tươi lâu.</p>
+                        
+                        <h4 class="mt-3">Đặc điểm nổi bật</h4>
+                        <ul>
+                            <li>Số lượng: 12 bông hoa hồng đỏ</li>
+                            <li>Màu sắc: Đỏ tươi sang trọng</li>
+                            <li>Độ tươi: 7-10 ngày trong điều kiện thích hợp</li>
+                            <li>Bao gồm giấy gói cao cấp và nơ</li>
+                        </ul>
+
+                        <h4 class="mt-3">Ý nghĩa</h4>
+                        <p>Hoa hồng đỏ tượng trưng cho tình yêu nồng cháy, sự lãng mạn và đam mê. Đây là món quà hoàn hảo cho những dịp đặc biệt như Valentine, kỷ niệm, hay bày tỏ tình cảm.</p>
+                    </div>
+
+                    <div class="purchase-section mt-4">
+                        <div class="quantity-selector mb-3">
+                            <label>Số lượng:</label>
+                            <div class="input-group" style="width: 150px;">
+                                <button class="btn btn-outline-secondary" type="button">-</button>
+                                <input type="number" class="form-control text-center" value="1" min="1">
+                                <button class="btn btn-outline-secondary" type="button">+</button>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-lg me-2">Thêm vào giỏ hàng</button>
+                        <button class="btn btn-danger btn-lg">Mua ngay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

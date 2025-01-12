@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng Hoa Tươi</title>
+    <link rel="stylesheet" href="SPCK.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="./css/SPCK.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <h1>Cửa hàng Hoa Tươi</h1>
+        <p>Mang vẻ đẹp thiên nhiên đến ngôi nhà của bạn</p>
+    </header>
+
+    <nav>
+        <div class="nav-left">
+            <a href="#home"><i class="fas fa-home"></i> Trang chủ</a>
+            <a href="#fresh-flowers"><i class="bi bi-flower3"></i> Hoa tươi</a>
+            <a href="#bouquets"><i class="bi bi-flower1"></i> Bó hoa</a>
+            <a href="#gifts"><i class="fas fa-gift"></i> Quà tặng</a>
+            <a href="#footer"><i class="fas fa-envelope"></i> Liên hệ</a>
+        </div>
+
+        <div class="nav-right">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal"><i class="fas fa-sign-in-alt"></i> Đăng nhập</a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal"><i class="fas fa-user-plus"></i> Đăng ký</a>
+            </div>
+    </nav>
+    
+
+    <div id="flowerCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#flowerCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#flowerCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#flowerCarousel" data-bs-slide-to="2"></button>
+        </div>
+        
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac" class="d-block w-100" alt="Hoa hồng">
+                <div class="carousel-caption">
+                    <h3>Bó Hoa Hồng Đặc Biệt</h3>
+                    <p>Giảm giá 20% cho đơn hàng đầu tiên</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://hellohoa.com/wp-content/uploads/2019/02/hoa-ly-trang-kieu-sa.jpg  " class="d-block w-100" alt="Hoa ly">
+                <div class="carousel-caption">
+                    <h3>Bộ Sưu Tập Hoa Ly</h3>
+                    <p>Mới về: Hoa ly nhập khẩu từ Hà Lan</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1589123053646-4e8c49d46b35" class="d-block w-100" alt="Hoa cúc">
+                <div class="carousel-caption">
+                    <h3>Hoa Cúc Tươi Mới</h3>
+                    <p>Đặt hàng ngay để nhận ưu đãi đặc biệt</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#flowerCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#flowerCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <div class="products">
+        <section id="fresh-flowers">
+            <h2 class="section-title">Hoa Tươi</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac" alt="Hoa hồng">
+                    <h3>Hoa Hồng Đỏ</h3>
+                    <p>Hoa hồng đỏ tươi thắm</p>
+                    <p class="price">150.000đ</p>
+                    <a href="./html/chitiet.html" class="buy-button">Mua ngay</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://imgcdn.tapchicongthuong.vn/thumb/w_1000/tcct-media/21/3/7/hoa_ly_trang_3.jpg" alt="Hoa ly">
+                    <h3>Hoa Ly Trắng</h3>
+                    <p>Hoa ly trắng tinh khôi</p>
+                    <p class="price">200.000đ</p>
+                    <a href="./html/chitiet1.html" class="buy-button">Mua ngay</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="bouquets">
+            <h2 class="section-title">Bó Hoa</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1589123053646-4e8c49d46b35" alt="Bó hoa cúc">
+                    <h3>Bó Hoa Cúc</h3>
+                    <p>Hoa cúc vàng rực rỡ</p>
+                    <p class="price">250.000đ</p>
+                    <a href="./html/chitiet2.html" class="buy-button">Mua ngay</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364" alt="Bó hoa tulip">
+                    <h3>Bó Hoa Tulip</h3>
+                    <p>Tulip Hà Lan nhập khẩu</p>
+                    <p class="price">600.000đ</p>
+                    <a href="./html/chitiet3.html" class="buy-button">Mua ngay</a>
+                </div>
+            </div>
+        </section>
+
+       
+    <footer id="footer">
+        <p>© 2024 Cửa hàng Hoa Tươi. Tất cả các quyền được bảo lưu.</p>
+        <p>Địa chỉ: 123 Đường Hoa, Quận 1, TP.HCM</p>
+        <p>Điện thoại: 0123-456-789 | Email: info@hoatuoi.com</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    
+   
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Đăng nhập</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="loginEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Mật khẩu</label>
+                            <input type="password" class="form-control" id="loginPassword" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Ghi nhớ đăng nhập</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Đăng nhập</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">Đăng ký</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="registerName" class="form-label">Họ và tên</label>
+                            <input type="text" class="form-control" id="registerName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="registerEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPassword" class="form-label">Mật khẩu</label>
+                            <input type="password" class="form-control" id="registerPassword" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirmPassword" class="form-label">Xác nhận mật khẩu</label>
+                            <input type="password" class="form-control" id="confirmPassword" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="agreeTerms" required>
+                            <label class="form-check-label" for="agreeTerms">Tôi đồng ý với các điều khoản sử dụng</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Đăng ký</button>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
