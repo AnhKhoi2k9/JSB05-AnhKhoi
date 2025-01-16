@@ -113,3 +113,23 @@ nav a i {
     background-color: #ff66b3;
     border-color: #ff66b3;
 }
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-left, .nav-right {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+    
+    .img-fluid {
+        margin-bottom: 20px;
+    }
+}
